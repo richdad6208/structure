@@ -1,7 +1,23 @@
 @import "tailwindcss";
 
-:root {
-  font-family: "Pre", sans-serif;
+@layer base {
+  :root {
+    --header-height: 80px;
+  }
+
+  body {
+    font-family: "Pre";
+  }
+}
+
+@layer components {
+  .center {
+    @apply flex items-center justify-center;
+  }
+
+  .between {
+    @apply flex items-center justify-between;
+  }
 }
 
 @font-face {
